@@ -22,7 +22,7 @@ const rates = [
   {flag:'🇦🇪',code:'AED',name:'UAE Dirham',rate:3.6725,usd:.2723,region:'Middle East'},
   {flag:'🇳🇬',code:'NGN',name:'Nigerian Naira',rate:1328.0,usd:.0007526,region:'Africa'},
 ];
-const MAIN_COIN='53JQhoktNWHCRwh5G9L3tQKKAizunzes8p1i5ijRpump';
+const MAIN_COIN='75CtNKKkQjvRcNv5V2D6AmXnAo1XJj84DhcBavjKpump';
 const API_BASE='';
 const routeMap:Record<string,string>={Explore:'/explore','Launch':'/launch','Your portfolio':'/portfolio','Creator rewards':'/claim','How it works':'/docs'};
 type Coin={name:string;ticker:string;currency:string;flag:string;image:string;price:string;change:number;mc:number;local:string;vol:string;trades:number;progress:number;age:string;address:string};
