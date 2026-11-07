@@ -22,11 +22,11 @@ const rates = [
   {flag:'🇦🇪',code:'AED',name:'UAE Dirham',rate:3.6725,usd:.2723,region:'Middle East'},
   {flag:'🇳🇬',code:'NGN',name:'Nigerian Naira',rate:1328.0,usd:.0007526,region:'Africa'},
 ];
-const MAIN_COIN='';
+const MAIN_COIN='53JQhoktNWHCRwh5G9L3tQKKAizunzes8p1i5ijRpump';
 const API_BASE='';
 const routeMap:Record<string,string>={Explore:'/explore','Launch':'/launch','Your portfolio':'/portfolio','Creator rewards':'/claim','How it works':'/docs'};
 type Coin={name:string;ticker:string;currency:string;flag:string;image:string;price:string;change:number;mc:number;local:string;vol:string;trades:number;progress:number;age:string;address:string};
-const seedCoins:Coin[]=[];
+const seedCoins:Coin[]=[{name:'web0',ticker:'WEB0',currency:'SOL',flag:'◎',image:'/web0-logo-supplied.png',price:'—',change:0,mc:0,local:'—',vol:'—',trades:0,progress:100,age:'live',address:MAIN_COIN}];
 
 declare global{interface Window{solana?:{isPhantom?:boolean;connect:()=>Promise<{publicKey:{toString:()=>string}}>;signTransaction:(tx:VersionedTransaction)=>Promise<VersionedTransaction>};phantom?:{solana?:{connect:()=>Promise<{publicKey:{toString:()=>string}}>;signTransaction:(tx:VersionedTransaction)=>Promise<VersionedTransaction>}}}}
 const short=(s:string)=>s.length>14?`${s.slice(0,5)}…${s.slice(-4)}`:s;
