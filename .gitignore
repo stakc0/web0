@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.bolt/
+.env
+.env.*
+!.env.example
+.venv-jak/
+data/*.sqlite
+data/*.sqlite-*
+
+/*.ttf
